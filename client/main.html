@@ -1,7 +1,15 @@
 <head>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+
+
+<div class="topnav">
+  <a class="active" href="main.html">Home</a>
+  <a href="news.html">News</a>
+</div>
+
 
 <div class="bgimg-1">
   <div class="caption">
@@ -120,6 +128,15 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
+}
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
 
 

@@ -21,5 +21,3 @@ Template.hello.events({
   },
 });
 
-
-
